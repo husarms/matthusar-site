@@ -1,12 +1,17 @@
-import { container, title, grayColor } from "assets/jss/nextjs-material-kit.js";
+import {
+  container,
+  title,
+  grayColor
+} from "assets/jss/nextjs-material-kit.js";
 import headerLinksStyle from "assets/jss/nextjs-material-kit/components/headerLinksStyle.js";
 
 const navbarsStyle = theme => ({
+  container,
+  ...headerLinksStyle(theme),
   section: {
     padding: "70px 0",
-    paddingTop: "0"
+    paddingBottom: "0"
   },
-  container,
   title: {
     ...title,
     marginTop: "30px",
@@ -19,22 +24,24 @@ const navbarsStyle = theme => ({
     position: "relative",
     overflow: "hidden",
     "& header": {
-      borderRadius: "0"
+      borderRadius: "0",
+      zIndex: "unset"
     }
   },
   navigation: {
-    backgroundPosition: "center center",
+    backgroundPosition: "50%",
     backgroundSize: "cover",
     marginTop: "0",
     minHeight: "740px"
   },
   formControl: {
     [theme.breakpoints.down("md")]: {
-      margin: "10px 0 0 15px !important",
-      color: grayColor
+      color: grayColor[0],
+      marginLeft: "20px !important"
     },
-    margin: "10px 0 0 0 !important",
-    paddingTop: "0"
+    margin: "0 !important",
+    paddingTop: "7px",
+    paddingBottom: "7px"
   },
   inputRootCustomClasses: {
     margin: "0!important"
@@ -44,7 +51,6 @@ const navbarsStyle = theme => ({
     height: "20px",
     color: "inherit"
   },
-  ...headerLinksStyle(theme),
   img: {
     width: "40px",
     height: "40px",
@@ -56,7 +62,6 @@ const navbarsStyle = theme => ({
       margin: "5px 15px"
     },
     padding: "0px",
-    top: "4px",
     borderRadius: "50%",
     marginLeft: "5px"
   }

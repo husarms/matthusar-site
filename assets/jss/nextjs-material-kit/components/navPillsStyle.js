@@ -1,11 +1,14 @@
 import {
-  hexToRGBAlpha,
   roseColor,
   primaryColor,
   infoColor,
   successColor,
   warningColor,
-  dangerColor
+  dangerColor,
+  blackColor,
+  whiteColor,
+  grayColor,
+  hexToRgb
 } from "assets/jss/nextjs-material-kit.js";
 
 const navPillsStyle = theme => ({
@@ -13,14 +16,7 @@ const navPillsStyle = theme => ({
     marginTop: "20px",
     paddingLeft: "0",
     marginBottom: "0",
-    overflow: "visible !important",
-    lineHeight: "24px",
-    textTransform: "uppercase",
-    fontSize: "12px",
-    fontWeight: "500",
-    position: "relative",
-    display: "block",
-    color: "inherit"
+    overflow: "visible !important"
   },
   flexContainer: {
     [theme.breakpoints.down("xs")]: {
@@ -46,11 +42,16 @@ const navPillsStyle = theme => ({
     textAlign: "center",
     transition: "all .3s",
     padding: "10px 15px",
-    color: "#555555",
+    color: grayColor[15],
     height: "auto",
     opacity: "1",
     maxWidth: "100%",
-    margin: "0 5px"
+    margin: "0 5px",
+    minHeight: "unset",
+    lineHeight: "24px",
+    textTransform: "uppercase",
+    fontSize: "12px",
+    fontWeight: "500"
   },
   pillsWithIcons: {
     borderRadius: "4px"
@@ -59,10 +60,7 @@ const navPillsStyle = theme => ({
     width: "30px",
     height: "30px",
     display: "block",
-    margin: "15px 0 !important",
-    "&, & *": {
-      letterSpacing: "normal !important"
-    }
+    margin: "15px 0 !important"
   },
   horizontalPills: {
     width: "100%",
@@ -72,85 +70,92 @@ const navPillsStyle = theme => ({
     }
   },
   contentWrapper: {
-    marginTop: "20px"
+    marginTop: "20px",
+    "& .react-swipeable-view-container > div > div": {
+      paddingLeft: "15px",
+      paddingRight: "15px"
+    }
   },
   primary: {
     "&,&:hover": {
-      color: "#FFFFFF",
-      backgroundColor: primaryColor,
-      boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
-        primaryColor,
-        0.4
-      )}`
+      color: whiteColor,
+      backgroundColor: primaryColor[0],
+      boxShadow:
+        "0 4px 20px 0px rgba(" +
+        hexToRgb(blackColor) +
+        ", 0.14), 0 7px 10px -5px rgba(" +
+        hexToRgb(primaryColor[0]) +
+        ", 0.4)"
     }
   },
   info: {
     "&,&:hover": {
-      color: "#FFFFFF",
-      backgroundColor: infoColor,
-      boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
-        infoColor,
-        0.4
-      )}`
+      color: whiteColor,
+      backgroundColor: infoColor[0],
+      boxShadow:
+        "0 4px 20px 0px rgba(" +
+        hexToRgb(blackColor) +
+        ", 0.14), 0 7px 10px -5px rgba(" +
+        hexToRgb(successColor[0]) +
+        ", 0.4)"
     }
   },
   success: {
     "&,&:hover": {
-      color: "#FFFFFF",
-      backgroundColor: successColor,
-      boxShadow: `0 2px 2px 0 ${hexToRGBAlpha(
-        successColor,
-        0.14
-      )}, 0 3px 1px -2px ${hexToRGBAlpha(
-        successColor,
-        0.2
-      )}, 0 1px 5px 0 ${hexToRGBAlpha(successColor, 0.12)}`
+      color: whiteColor,
+      backgroundColor: successColor[0],
+      boxShadow:
+        "0 2px 2px 0 rgba(" +
+        hexToRgb(successColor[0]) +
+        ", 0.14), 0 3px 1px -2px rgba(" +
+        hexToRgb(successColor[0]) +
+        ", 0.2), 0 1px 5px 0 rgba(" +
+        hexToRgb(successColor[0]) +
+        ", 0.12)"
     }
   },
   warning: {
     "&,&:hover": {
-      color: "#FFFFFF",
-      backgroundColor: warningColor,
-      boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
-        warningColor,
-        0.4
-      )}`
+      color: whiteColor,
+      backgroundColor: warningColor[0],
+      boxShadow:
+        "0 4px 20px 0px rgba(" +
+        hexToRgb(blackColor) +
+        ", 0.14), 0 7px 10px -5px rgba(" +
+        hexToRgb(warningColor[0]) +
+        ", 0.4)"
     }
   },
   danger: {
     "&,&:hover": {
-      color: "#FFFFFF",
-      backgroundColor: dangerColor,
-      boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
-        dangerColor,
-        0.4
-      )}`
+      color: whiteColor,
+      backgroundColor: dangerColor[0],
+      boxShadow:
+        "0 4px 20px 0px rgba(" +
+        hexToRgb(blackColor) +
+        ", 0.14), 0 7px 10px -5px rgba(" +
+        hexToRgb(warningColor[0]) +
+        ", 0.4)"
     }
   },
   rose: {
     "&,&:hover": {
-      color: "#FFFFFF",
-      backgroundColor: roseColor,
-      boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
-        roseColor,
-        0.4
-      )}`
+      color: whiteColor,
+      backgroundColor: roseColor[0],
+      boxShadow:
+        "0 4px 20px 0px rgba(" +
+        hexToRgb(blackColor) +
+        ", 0.14), 0 7px 10px -5px rgba(" +
+        hexToRgb(roseColor[0]) +
+        ", 0.4)"
     }
   },
   alignCenter: {
     alignItems: "center",
     justifyContent: "center"
   },
-  tabWrapper: {
-    color: "inherit",
-    position: "relative",
-    fontSize: "12px",
-    lineHeight: "24px",
-    fontWeight: "500",
-    textTransform: "uppercase",
-    "&,& *": {
-      letterSpacing: "normal"
-    }
+  tabLabelContainer: {
+    padding: "unset !important"
   }
 });
 

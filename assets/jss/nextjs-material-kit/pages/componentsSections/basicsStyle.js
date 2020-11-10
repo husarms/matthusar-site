@@ -1,11 +1,22 @@
-import { container, title } from "assets/jss/nextjs-material-kit.js";
-import customCheckboxRadioSwitch from "assets/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
+import {
+  container,
+  whiteColor,
+  title,
+  mlAuto,
+  mrAuto
+} from "assets/jss/nextjs-material-kit.js";
+import customCheckboxRadioSwitch from "assets/jss/nextjs-material-kit/customCheckboxRadioSwitchStyle.js";
+import customSelectStyle from "assets/jss/nextjs-material-kit/customSelectStyle.js";
 
 const basicsStyle = {
+  mlAuto,
+  mrAuto,
+  container,
+  ...customSelectStyle,
+  ...customCheckboxRadioSwitch,
   sections: {
     padding: "70px 0"
   },
-  container,
   title: {
     ...title,
     marginTop: "30px",
@@ -23,9 +34,8 @@ const basicsStyle = {
   icons: {
     width: "17px",
     height: "17px",
-    color: "#FFFFFF"
-  },
-  ...customCheckboxRadioSwitch
+    color: whiteColor
+  }
 };
 
 export default basicsStyle;

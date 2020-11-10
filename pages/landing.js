@@ -18,9 +18,9 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
-import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
-import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+import ProductSection from "pages-sections/landing/ProductSection.js";
+import TeamSection from "pages-sections/landing/TeamSection.js";
+import WorkSection from "pages-sections/landing/WorkSection.js";
 
 const dashboardRoutes = [];
 
@@ -32,22 +32,17 @@ export default function LandingPage(props) {
   return (
     <div>
       <Header
-        color="transparent"
-        routes={dashboardRoutes}
-        brand="NextJS Material Kit"
+        brand="Matt Husar"
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
+        color="dark"
         {...rest}
       />
-      <Parallax filter responsive image={require("assets/img/landing-bg.jpg")}>
+      <Parallax filter responsive image={require("assets/img/travel/thailand-1.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>We Traveled the World.</h1>
               <h4>
                 Every landing page needs a small description after the big bold
                 title, that{"'"}s why we added this text here. Add here all the

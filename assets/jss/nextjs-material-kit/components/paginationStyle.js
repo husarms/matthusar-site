@@ -1,20 +1,20 @@
 import {
-  hexToRGBAlpha,
   grayColor,
   primaryColor,
   infoColor,
   successColor,
   warningColor,
+  whiteColor,
   dangerColor,
-  roseColor
+  hexToRgb
 } from "assets/jss/nextjs-material-kit.js";
 
 const paginationStyle = {
   pagination: {
-    display: "inline-block",
+    display: "flex",
     paddingLeft: "0",
-    margin: "0 0 20px 0",
-    borderRadius: "4px"
+    listStyle: "none",
+    borderRadius: "0.25rem"
   },
   paginationItem: {
     display: "inline"
@@ -42,12 +42,12 @@ const paginationStyle = {
     textDecoration: "none",
     boxSizing: "border-box",
     "&,&:hover,&:focus": {
-      color: grayColor
+      color: grayColor[0]
     },
     "&:hover,&:focus": {
       zIndex: "3",
-      backgroundColor: "#eee",
-      borderColor: "#ddd"
+      backgroundColor: grayColor[2],
+      borderColor: grayColor[6]
     },
     "&:hover": {
       cursor: "pointer"
@@ -55,16 +55,17 @@ const paginationStyle = {
   },
   primary: {
     "&,&:hover,&:focus": {
-      backgroundColor: primaryColor,
-      borderColor: primaryColor,
-      color: "#FFFFFF",
-      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
-        primaryColor,
-        0.14
-      )}, 0 1px 10px 0 ${hexToRGBAlpha(
-        primaryColor,
-        0.12
-      )}, 0 2px 4px -1px ${hexToRGBAlpha(primaryColor, 0.2)}`
+      backgroundColor: primaryColor[0],
+      borderColor: primaryColor[0],
+      color: whiteColor,
+      boxShadow:
+        "0 4px 5px 0 rgba(" +
+        hexToRgb(primaryColor[0]) +
+        ", 0.14), 0 1px 10px 0 rgba(" +
+        hexToRgb(primaryColor[0]) +
+        ", 0.12), 0 2px 4px -1px rgba(" +
+        hexToRgb(primaryColor[0]) +
+        ", 0.2)"
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -73,16 +74,17 @@ const paginationStyle = {
   },
   info: {
     "&,&:hover,&:focus": {
-      backgroundColor: infoColor,
-      borderColor: infoColor,
-      color: "#FFFFFF",
-      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
-        infoColor,
-        0.14
-      )}, 0 1px 10px 0 ${hexToRGBAlpha(
-        infoColor,
-        0.12
-      )}, 0 2px 4px -1px ${hexToRGBAlpha(infoColor, 0.2)}`
+      backgroundColor: infoColor[0],
+      borderColor: infoColor[0],
+      color: whiteColor,
+      boxShadow:
+        "0 4px 5px 0 rgba(" +
+        hexToRgb(infoColor[0]) +
+        ", 0.14), 0 1px 10px 0 rgba(" +
+        hexToRgb(infoColor[0]) +
+        ", 0.12), 0 2px 4px -1px rgba(" +
+        hexToRgb(infoColor[0]) +
+        ", 0.2)"
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -91,16 +93,17 @@ const paginationStyle = {
   },
   success: {
     "&,&:hover,&:focus": {
-      backgroundColor: successColor,
-      borderColor: successColor,
-      color: "#FFFFFF",
-      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
-        successColor,
-        0.14
-      )}, 0 1px 10px 0 ${hexToRGBAlpha(
-        successColor,
-        0.12
-      )}, 0 2px 4px -1px ${hexToRGBAlpha(successColor, 0.2)}`
+      backgroundColor: successColor[0],
+      borderColor: successColor[0],
+      color: whiteColor,
+      boxShadow:
+        "0 4px 5px 0 rgba(" +
+        hexToRgb(successColor[0]) +
+        ", 0.14), 0 1px 10px 0 rgba(" +
+        hexToRgb(successColor[0]) +
+        ", 0.12), 0 2px 4px -1px rgba(" +
+        hexToRgb(successColor[0]) +
+        ", 0.2)"
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -109,16 +112,17 @@ const paginationStyle = {
   },
   warning: {
     "&,&:hover,&:focus": {
-      backgroundColor: warningColor,
-      borderColor: warningColor,
-      color: "#FFFFFF",
-      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
-        warningColor,
-        0.14
-      )}, 0 1px 10px 0 ${hexToRGBAlpha(
-        warningColor,
-        0.12
-      )}, 0 2px 4px -1px ${hexToRGBAlpha(warningColor, 0.2)}`
+      backgroundColor: warningColor[0],
+      borderColor: warningColor[0],
+      color: whiteColor,
+      boxShadow:
+        "0 4px 5px 0 rgba(" +
+        hexToRgb(warningColor[0]) +
+        ", 0.14), 0 1px 10px 0 rgba(" +
+        hexToRgb(warningColor[0]) +
+        ", 0.12), 0 2px 4px -1px rgba(" +
+        hexToRgb(warningColor[0]) +
+        ", 0.2)"
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -127,34 +131,17 @@ const paginationStyle = {
   },
   danger: {
     "&,&:hover,&:focus": {
-      backgroundColor: dangerColor,
-      borderColor: dangerColor,
-      color: "#FFFFFF",
-      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
-        dangerColor,
-        0.14
-      )}, 0 1px 10px 0 ${hexToRGBAlpha(
-        dangerColor,
-        0.12
-      )}, 0 2px 4px -1px ${hexToRGBAlpha(dangerColor, 0.2)}`
-    },
-    "&:hover,&:focus": {
-      zIndex: "2",
-      cursor: "default"
-    }
-  },
-  rose: {
-    "&,&:hover,&:focus": {
-      backgroundColor: roseColor,
-      borderColor: roseColor,
-      color: "#FFFFFF",
-      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
-        roseColor,
-        0.14
-      )}, 0 1px 10px 0 ${hexToRGBAlpha(
-        roseColor,
-        0.12
-      )}, 0 2px 4px -1px ${hexToRGBAlpha(roseColor, 0.2)}`
+      backgroundColor: dangerColor[0],
+      borderColor: dangerColor[0],
+      color: whiteColor,
+      boxShadow:
+        "0 4px 5px 0 rgba(" +
+        hexToRgb(dangerColor[0]) +
+        ", 0.14), 0 1px 10px 0 rgba(" +
+        hexToRgb(dangerColor[0]) +
+        ", 0.12), 0 2px 4px -1px rgba(" +
+        hexToRgb(dangerColor[0]) +
+        ", 0.2)"
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -163,10 +150,10 @@ const paginationStyle = {
   },
   disabled: {
     "&,&:hover,&:focus": {
-      color: "#777",
+      color: grayColor[10],
       cursor: "not-allowed",
-      backgroundColor: "#fff",
-      borderColor: "#ddd"
+      backgroundColor: whiteColor,
+      borderColor: grayColor[6]
     }
   }
 };

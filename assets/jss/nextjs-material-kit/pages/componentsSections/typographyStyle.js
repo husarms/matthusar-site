@@ -1,4 +1,8 @@
-import { container, title } from "assets/jss/nextjs-material-kit.js";
+import {
+  grayColor,
+  container,
+  title
+} from "assets/jss/nextjs-material-kit.js";
 
 import imagesStyles from "assets/jss/nextjs-material-kit/imagesStyles.js";
 
@@ -26,7 +30,7 @@ const typographyStyle = {
   note: {
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     bottom: "10px",
-    color: "#c0c1c2",
+    color: grayColor[21],
     display: "block",
     fontWeight: "400",
     fontSize: "13px",
