@@ -10,8 +10,8 @@ import Favorite from "@material-ui/icons/Favorite";
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
-import GridContainer from "../pages-sections/landing/node_modules/components/Grid/GridContainer.js.js.js";
-import GridItem from "../pages-sections/landing/node_modules/components/Grid/GridItem.js.js.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import SectionPills from "pages-sections/blog-posts/SectionPills.js";

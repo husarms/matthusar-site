@@ -6,7 +6,7 @@ import cx from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import GridContainer from "../../pages-sections/landing/node_modules/components/Grid/GridContainer.js.js.js";
+import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem";
 
 import styles from "assets/jss/nextjs-material-kit/components/instructionStyle.js";
