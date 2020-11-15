@@ -1,4 +1,5 @@
 import React from "react";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -15,19 +16,20 @@ import Info from "components/Typography/Info.js";
 import Primary from "components/Typography/Primary.js";
 import Muted from "components/Typography/Muted.js";
 import Quote from "components/Typography/Quote.js";
+import SectionContentAreas from "./SectionContentAreas.js";
+
+import typographyStyle from "assets/jss/nextjs-material-kit-pro/pages/componentsSections/typographyStyle.js";
 
 import image from "assets/img/faces/avatar.jpg";
 
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/typographyStyle.js";
-
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(typographyStyle);
 
 export default function SectionTypography() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <div id="typography">
+        <div id="typography" className="cd-section">
           <div className={classes.title}>
             <h2>Typography</h2>
           </div>
@@ -136,7 +138,9 @@ export default function SectionTypography() {
               <h2>
                 Header with small subtitle
                 <br />
-                <Small>Use {'"Small"'} tag for the headers</Small>
+                <Small>
+                  Use {'"'}Small{'"'} tag for the headers
+                </Small>
               </h2>
             </div>
           </GridContainer>
@@ -196,6 +200,7 @@ export default function SectionTypography() {
           <GridContainer />
         </div>
         <div className={classes.space50} />
+        <SectionContentAreas />
       </div>
     </div>
   );

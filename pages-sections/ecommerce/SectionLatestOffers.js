@@ -15,7 +15,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui icons
 import Favorite from "@material-ui/icons/Favorite";
 
-import styles from "assets/jss/nextjs-material-kit/pages/ecommerceSections/latestOffersStyle.js";
+import styles from "assets/jss/nextjs-material-kit-pro/pages/ecommerceSections/latestOffersStyle.js";
 
 import gucci from "assets/img/examples/gucci.jpg";
 import tomFord from "assets/img/examples/tom-ford.jpg";

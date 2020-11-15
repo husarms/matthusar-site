@@ -16,10 +16,10 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Footer from "components/Footer/Footer.js";
 // sections for this page
-import SectionPricing from "pages-sections/pricing/SectionPricing.js";
-import SectionFeatures from "pages-sections/pricing/SectionFeatures.js";
+import SectionPricing from "pages-sections/pricing-page/SectionPricing.js";
+import SectionFeatures from "pages-sections/pricing-page/SectionFeatures.js";
 
-import pricingStyle from "assets/jss/nextjs-material-kit/pages/pricingStyle.js";
+import pricingStyle from "assets/jss/nextjs-material-kit-pro/pages/pricingStyle.js";
 
 const useStyles = makeStyles(pricingStyle);
 

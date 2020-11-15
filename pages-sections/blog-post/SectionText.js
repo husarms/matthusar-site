@@ -13,7 +13,7 @@ import blog4 from "assets/img/examples/blog4.jpg";
 import blog3 from "assets/img/examples/blog3.jpg";
 import blog1 from "assets/img/examples/blog1.jpg";
 
-import sectionTextStyle from "assets/jss/nextjs-material-kit/pages/blogPostSections/sectionTextStyle.js";
+import sectionTextStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostSections/sectionTextStyle.js";
 
 const useStyles = makeStyles(sectionTextStyle);
 

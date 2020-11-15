@@ -19,7 +19,7 @@ import SectionInterested from "pages-sections/blog-posts/SectionInterested.js";
 import SectionImage from "pages-sections/blog-posts/SectionImage.js";
 import SubscribeLine from "pages-sections/blog-posts/SubscribeLine.js";
 
-import blogPostsPageStyle from "assets/jss/nextjs-material-kit/pages/blogPostsPageStyle.js";
+import blogPostsPageStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostsPageStyle.js";
 
 const useStyles = makeStyles(blogPostsPageStyle);
 

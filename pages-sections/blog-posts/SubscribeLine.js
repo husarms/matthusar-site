@@ -12,7 +12,7 @@ import CardBody from "components/Card/CardBody.js";
 import Button from "components/CustomButtons/Button.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 
-import sectionSubscribeLineStyle from "assets/jss/nextjs-material-kit/pages/blogPostsSections/sectionSubscribeLineStyle.js";
+import sectionSubscribeLineStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostsSections/sectionSubscribeLineStyle.js";
 
 const useStyles = makeStyles(sectionSubscribeLineStyle);
 

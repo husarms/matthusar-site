@@ -14,7 +14,7 @@ import dg6 from "assets/img/dg6.jpg";
 import dg10 from "assets/img/dg10.jpg";
 import dg9 from "assets/img/dg9.jpg";
 
-import styles from "assets/jss/nextjs-material-kit/pages/ecommerceSections/blogStyle.js";
+import styles from "assets/jss/nextjs-material-kit-pro/pages/ecommerceSections/blogStyle.js";
 
 const useStyles = makeStyles(styles);
 

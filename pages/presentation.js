@@ -15,17 +15,17 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // sections for this page
-import SectionDescription from "pages-sections/presentation/SectionDescription.js";
-import SectionComponents from "pages-sections/presentation/SectionComponents.js";
-import SectionCards from "pages-sections/presentation/SectionCards.js";
-import SectionContent from "pages-sections/presentation/SectionContent.js";
-import SectionSections from "pages-sections/presentation/SectionSections.js";
-import SectionExamples from "pages-sections/presentation/SectionExamples.js";
-import SectionFreeDemo from "pages-sections/presentation/SectionFreeDemo.js";
-import SectionOverview from "pages-sections/presentation/SectionOverview.js";
-import SectionPricing from "pages-sections/presentation/SectionPricing.js";
+import SectionDescription from "pages-sections/presentation-page/SectionDescription.js";
+import SectionComponents from "pages-sections/presentation-page/SectionComponents.js";
+import SectionCards from "pages-sections/presentation-page/SectionCards.js";
+import SectionContent from "pages-sections/presentation-page/SectionContent.js";
+import SectionSections from "pages-sections/presentation-page/SectionSections.js";
+import SectionExamples from "pages-sections/presentation-page/SectionExamples.js";
+import SectionFreeDemo from "pages-sections/presentation-page/SectionFreeDemo.js";
+import SectionOverview from "pages-sections/presentation-page/SectionOverview.js";
+import SectionPricing from "pages-sections/presentation-page/SectionPricing.js";
 
-import presentationStyle from "assets/jss/nextjs-material-kit/pages/presentationStyle.js";
+import presentationStyle from "assets/jss/nextjs-material-kit-pro/pages/presentationStyle.js";
 
 const useStyles = makeStyles(presentationStyle);
 
@@ -84,7 +84,7 @@ export default function PresentationPage() {
           <div>
             <div className={classes.left}>
               <a
-                href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmkp-presentation"
+                href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-presentation"
                 target="_blank"
                 className={classes.footerBrand}
               >

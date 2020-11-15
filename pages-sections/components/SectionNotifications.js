@@ -1,4 +1,5 @@
 import React from "react";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -7,16 +8,16 @@ import Warning from "@material-ui/icons/Warning";
 // core components
 import SnackbarContent from "components/Snackbar/SnackbarContent.js";
 import Clearfix from "components/Clearfix/Clearfix.js";
+import notificationsStyles from "assets/jss/nextjs-material-kit-pro/pages/componentsSections/notificationsStyles.js";
 
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/notificationsStyles.js";
-
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(notificationsStyles);
 
 export default function SectionNotifications() {
   const classes = useStyles();
   return (
-    <div className={classes.section} id="notifications">
+    <div className={classes.section + " cd-section"} id="notifications">
       <div className={classes.container}>
+        <div className={classes.space70} />
         <div className={classes.title}>
           <h3>Notifications</h3>
         </div>

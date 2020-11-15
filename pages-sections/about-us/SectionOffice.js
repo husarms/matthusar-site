@@ -7,7 +7,7 @@ import GridItem from "components/Grid/GridItem.js";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-import officeStyle from "assets/jss/nextjs-material-kit/pages/aboutUsSections/officeStyle.js";
+import officeStyle from "assets/jss/nextjs-material-kit-pro/pages/aboutUsSections/officeStyle.js";
 
 // office
 import office1 from "assets/img/examples/office1.jpg";

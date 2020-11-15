@@ -1,4 +1,5 @@
 import React from "react";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -10,10 +11,9 @@ import Build from "@material-ui/icons/Build";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import tabsStyle from "assets/jss/nextjs-material-kit-pro/pages/componentsSections/tabsStyle.js";
 
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
-
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(tabsStyle);
 
 export default function SectionTabs() {
   const classes = useStyles();
@@ -23,7 +23,7 @@ export default function SectionTabs() {
         <div id="nav-tabs">
           <h3>Navigation Tabs</h3>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
+            <GridItem xs={12} sm={6} md={6}>
               <h3>
                 <small>Tabs with Icons on Card</small>
               </h3>
@@ -81,7 +81,7 @@ export default function SectionTabs() {
                 ]}
               />
             </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
+            <GridItem xs={12} sm={6} md={6}>
               <h3>
                 <small>Tabs on Plain Card</small>
               </h3>

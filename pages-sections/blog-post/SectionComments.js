@@ -16,7 +16,7 @@ import profile4 from "assets/img/faces/card-profile4-square.jpg";
 import profile1 from "assets/img/faces/card-profile1-square.jpg";
 import profile6 from "assets/img/faces/card-profile6-square.jpg";
 
-import sectionCommentsStyle from "assets/jss/nextjs-material-kit/pages/blogPostSections/sectionCommentsStyle.js";
+import sectionCommentsStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostSections/sectionCommentsStyle.js";
 
 const useStyles = makeStyles(sectionCommentsStyle);
 

@@ -1,18 +1,21 @@
 /*!
 
- =========================================================
- * Material Dashboard React - v1.8.0
- =========================================================
+=========================================================
+* NextJS Material Kit PRO v1.1.0 based on Material Kit PRO - v2.0.2 (Bootstrap 4.0.0 Final Edition) and Material Kit PRO React v1.8.0
+=========================================================
 
- * Product Page: https://www.creative-tim.com/product/material-dashboard-react
- * Copyright 2020 Creative Tim (https://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
+* Product Page: https://www.creative-tim.com/product/ct-nextjs-material-kit-pro
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/ct-nextjs-material-kit-pro/blob/master/LICENSE.md)
 
- =========================================================
+* Coded by Creative Tim
 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+=========================================================
 
- */
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
 
 
 /* ANIMATION */
@@ -21,7 +24,7 @@
 /* SHADOWS */
 
 
-/* Shadows (from mdl https://www.getmdl.io/) */
+/* Shadows (from mdl http://www.getmdl.io/) */
 
 .noUi-target,
 .noUi-target * {
@@ -193,8 +196,8 @@
 
 
 /*!
-Animate.css - https://daneden.me/animate
-Licensed under the MIT license - https://opensource.org/licenses/MIT
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */

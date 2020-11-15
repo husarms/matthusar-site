@@ -25,7 +25,7 @@ import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 
-import shoppingCartStyle from "assets/jss/nextjs-material-kit/pages/shoppingCartStyle.js";
+import shoppingCartStyle from "assets/jss/nextjs-material-kit-pro/pages/shoppingCartStyle.js";
 
 import product1 from "assets/img/product1.jpg";
 import product2 from "assets/img/product2.jpg";

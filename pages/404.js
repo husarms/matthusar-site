@@ -13,7 +13,7 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
-import errorPageStyle from "assets/jss/nextjs-material-kit/pages/errorPageStyles.js";
+import errorPageStyle from "assets/jss/nextjs-material-kit-pro/pages/errorPageStyles.js";
 
 import image from "assets/img/clint-mckoy.jpg";
 

@@ -17,7 +17,7 @@ import bg10 from "assets/img/bg10.jpg";
 import cardProfile1 from "assets/img/faces/card-profile1-square.jpg";
 import cardProfile4 from "assets/img/faces/card-profile4-square.jpg";
 
-import sectionImageStyle from "assets/jss/nextjs-material-kit/pages/blogPostsSections/sectionImageStyle.js";
+import sectionImageStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostsSections/sectionImageStyle.js";
 
 const useStyles = makeStyles(sectionImageStyle);
 

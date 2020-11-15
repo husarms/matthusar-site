@@ -28,7 +28,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 import Footer from "components/Footer/Footer.js";
 
-import contactUsStyle from "assets/jss/nextjs-material-kit/pages/contactUsStyle.js";
+import contactUsStyle from "assets/jss/nextjs-material-kit-pro/pages/contactUsStyle.js";
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap(() => (

@@ -37,7 +37,7 @@ import color2 from "assets/img/examples/color2.jpg";
 import dg3 from "assets/img/dg3.jpg";
 import dg1 from "assets/img/dg1.jpg";
 
-import styles from "assets/jss/nextjs-material-kit/pages/ecommerceSections/productsStyle.js";
+import styles from "assets/jss/nextjs-material-kit-pro/pages/ecommerceSections/productsStyle.js";
 
 const useStyles = makeStyles(styles);
 

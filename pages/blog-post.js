@@ -22,7 +22,7 @@ import SectionBlogInfo from "pages-sections/blog-post/SectionBlogInfo.js";
 import SectionComments from "pages-sections/blog-post/SectionComments.js";
 import SectionSimilarStories from "pages-sections/blog-post/SectionSimilarStories.js";
 
-import blogPostPageStyle from "assets/jss/nextjs-material-kit/pages/blogPostPageStyle.js";
+import blogPostPageStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostPageStyle.js";
 
 const useStyles = makeStyles(blogPostPageStyle);
 

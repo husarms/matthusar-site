@@ -11,7 +11,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
-import servicesStyle from "assets/jss/nextjs-material-kit/pages/aboutUsSections/servicesStyle.js";
+import servicesStyle from "assets/jss/nextjs-material-kit-pro/pages/aboutUsSections/servicesStyle.js";
 
 const useStyles = makeStyles(servicesStyle);
 

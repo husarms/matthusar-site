@@ -7,7 +7,7 @@ import GridItem from "components/Grid/GridItem.js";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-import descriptionStyle from "assets/jss/nextjs-material-kit/pages/aboutUsSections/descriptionStyle.js";
+import descriptionStyle from "assets/jss/nextjs-material-kit-pro/pages/aboutUsSections/descriptionStyle.js";
 
 const useStyles = makeStyles(descriptionStyle);
 

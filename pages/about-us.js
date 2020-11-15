@@ -22,7 +22,7 @@ import SectionServices from "pages-sections/about-us/SectionServices.js";
 import SectionOffice from "pages-sections/about-us/SectionOffice.js";
 import SectionContact from "pages-sections/about-us/SectionContact.js";
 
-import aboutUsStyle from "assets/jss/nextjs-material-kit/pages/aboutUsStyle.js";
+import aboutUsStyle from "assets/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js";
 
 const useStyles = makeStyles(aboutUsStyle);
 

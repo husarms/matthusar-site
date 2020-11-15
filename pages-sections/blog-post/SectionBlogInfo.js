@@ -12,7 +12,7 @@ import CardAvatar from "components/Card/CardAvatar.js";
 
 import profileImage from "assets/img/faces/card-profile1-square.jpg";
 
-import sectionBlogInfoStyle from "assets/jss/nextjs-material-kit/pages/blogPostSections/sectionBlogInfoStyle.js";
+import sectionBlogInfoStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostSections/sectionBlogInfoStyle.js";
 
 const useStyles = makeStyles(sectionBlogInfoStyle);
 
