@@ -18,12 +18,12 @@ import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import landingPageStyle from "assets/jss/nextjs-material-kit-pro/pages/landingPageStyle.js";
+import landingPageStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/landingPageStyle.js";
 
 // Sections for this page
-import SectionProduct from "pages-sections/landing-page/SectionProduct.js";
-import SectionTeam from "pages-sections/landing-page/SectionTeam.js";
-import SectionWork from "pages-sections/landing-page/SectionWork.js";
+import SectionProduct from "pages-sections/examples/landing-page/SectionProduct.js";
+import SectionTeam from "pages-sections/examples/landing-page/SectionTeam.js";
+import SectionWork from "pages-sections/examples/landing-page/SectionWork.js";
 
 const useStyles = makeStyles(landingPageStyle);
 

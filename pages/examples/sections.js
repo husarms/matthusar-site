@@ -6,16 +6,16 @@ import { makeStyles } from "@material-ui/core/styles";
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 // sections of this Page
-import SectionHeaders from "pages-sections/sections-page/SectionHeaders.js";
-import SectionFeatures from "pages-sections/sections-page/SectionFeatures.js";
-import SectionBlogs from "pages-sections/sections-page/SectionBlogs.js";
-import SectionTeams from "pages-sections/sections-page/SectionTeams.js";
-import SectionProjects from "pages-sections/sections-page/SectionProjects.js";
-import SectionPricing from "pages-sections/sections-page/SectionPricing.js";
-import SectionTestimonials from "pages-sections/sections-page/SectionTestimonials.js";
-import SectionContacts from "pages-sections/sections-page/SectionContacts.js";
+import SectionHeaders from "pages-sections/examples/sections-page/SectionHeaders.js";
+import SectionFeatures from "pages-sections/examples/sections-page/SectionFeatures.js";
+import SectionBlogs from "pages-sections/examples/sections-page/SectionBlogs.js";
+import SectionTeams from "pages-sections/examples/sections-page/SectionTeams.js";
+import SectionProjects from "pages-sections/examples/sections-page/SectionProjects.js";
+import SectionPricing from "pages-sections/examples/sections-page/SectionPricing.js";
+import SectionTestimonials from "pages-sections/examples/sections-page/SectionTestimonials.js";
+import SectionContacts from "pages-sections/examples/sections-page/SectionContacts.js";
 
-import sectionsPageStyle from "assets/jss/nextjs-material-kit-pro/pages/sectionsPageStyle.js";
+import sectionsPageStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/sectionsPageStyle.js";
 
 const useStyles = makeStyles(sectionsPageStyle);
 

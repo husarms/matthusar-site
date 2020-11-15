@@ -21,9 +21,9 @@ import CardBody from "components/Card/CardBody.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Footer from "components/Footer/Footer.js";
 // sections for this page
-import SectionLatestOffers from "pages-sections/ecommerce/SectionLatestOffers.js";
-import SectionProducts from "pages-sections/ecommerce/SectionProducts.js";
-import SectionBlog from "pages-sections/ecommerce/SectionBlog.js";
+import SectionLatestOffers from "pages-sections/examples/ecommerce/SectionLatestOffers.js";
+import SectionProducts from "pages-sections/examples/ecommerce/SectionProducts.js";
+import SectionBlog from "pages-sections/examples/ecommerce/SectionBlog.js";
 
 import ecommerceHeader from "assets/img/examples/ecommerce-header.jpg";
 import face1 from "assets/img/faces/card-profile6-square.jpg";
@@ -35,7 +35,7 @@ import face6 from "assets/img/faces/kendall.jpg";
 import face7 from "assets/img/faces/card-profile5-square.jpg";
 import face8 from "assets/img/faces/card-profile2-square.jpg";
 
-import styles from "assets/jss/nextjs-material-kit-pro/pages/ecommerceStyle.js";
+import styles from "assets/jss/nextjs-material-kit-pro/pages/examples/ecommerceStyle.js";
 
 const useStyles = makeStyles(styles);
 

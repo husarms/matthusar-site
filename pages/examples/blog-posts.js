@@ -14,12 +14,12 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
-import SectionPills from "pages-sections/blog-posts/SectionPills.js";
-import SectionInterested from "pages-sections/blog-posts/SectionInterested.js";
-import SectionImage from "pages-sections/blog-posts/SectionImage.js";
-import SubscribeLine from "pages-sections/blog-posts/SubscribeLine.js";
+import SectionPills from "pages-sections/examples/blog-posts/SectionPills.js";
+import SectionInterested from "pages-sections/examples/blog-posts/SectionInterested.js";
+import SectionImage from "pages-sections/examples/blog-posts/SectionImage.js";
+import SubscribeLine from "pages-sections/examples/blog-posts/SubscribeLine.js";
 
-import blogPostsPageStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostsPageStyle.js";
+import blogPostsPageStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/blogPostsPageStyle.js";
 
 const useStyles = makeStyles(blogPostsPageStyle);
 

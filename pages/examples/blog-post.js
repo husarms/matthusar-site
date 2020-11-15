@@ -17,12 +17,12 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // sections for this page
-import SectionText from "pages-sections/blog-post/SectionText.js";
-import SectionBlogInfo from "pages-sections/blog-post/SectionBlogInfo.js";
-import SectionComments from "pages-sections/blog-post/SectionComments.js";
-import SectionSimilarStories from "pages-sections/blog-post/SectionSimilarStories.js";
+import SectionText from "pages-sections/examples/blog-post/SectionText.js";
+import SectionBlogInfo from "pages-sections/examples/blog-post/SectionBlogInfo.js";
+import SectionComments from "pages-sections/examples/blog-post/SectionComments.js";
+import SectionSimilarStories from "pages-sections/examples/blog-post/SectionSimilarStories.js";
 
-import blogPostPageStyle from "assets/jss/nextjs-material-kit-pro/pages/blogPostPageStyle.js";
+import blogPostPageStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/blogPostPageStyle.js";
 
 const useStyles = makeStyles(blogPostPageStyle);
 

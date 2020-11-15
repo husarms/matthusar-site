@@ -41,7 +41,7 @@ import marc from "assets/img/faces/marc.jpg";
 import kendall from "assets/img/faces/kendall.jpg";
 import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
 
-import profilePageStyle from "assets/jss/nextjs-material-kit-pro/pages/profilePageStyle.js";
+import profilePageStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/profilePageStyle.js";
 
 const useStyles = makeStyles(profilePageStyle);
 

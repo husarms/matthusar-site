@@ -16,19 +16,19 @@ import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 // sections for this page
-import SectionBasics from "pages-sections/components/SectionBasics.js";
-import SectionNavbars from "pages-sections/components/SectionNavbars.js";
-import SectionTabs from "pages-sections/components/SectionTabs.js";
-import SectionPills from "pages-sections/components/SectionPills.js";
-import SectionNotifications from "pages-sections/components/SectionNotifications.js";
-import SectionPreFooter from "pages-sections/components/SectionPreFooter.js";
-import SectionFooter from "pages-sections/components/SectionFooter.js";
-import SectionTypography from "pages-sections/components/SectionTypography.js";
-import SectionCards from "pages-sections/components/SectionCards.js";
-import SectionJavascript from "pages-sections/components/SectionJavascript.js";
-import SectionCarousel from "pages-sections/components/SectionCarousel.js";
+import SectionBasics from "pages-sections/examples/components/SectionBasics.js";
+import SectionNavbars from "pages-sections/examples/components/SectionNavbars.js";
+import SectionTabs from "pages-sections/examples/components/SectionTabs.js";
+import SectionPills from "pages-sections/examples/components/SectionPills.js";
+import SectionNotifications from "pages-sections/examples/components/SectionNotifications.js";
+import SectionPreFooter from "pages-sections/examples/components/SectionPreFooter.js";
+import SectionFooter from "pages-sections/examples/components/SectionFooter.js";
+import SectionTypography from "pages-sections/examples/components/SectionTypography.js";
+import SectionCards from "pages-sections/examples/components/SectionCards.js";
+import SectionJavascript from "pages-sections/examples/components/SectionJavascript.js";
+import SectionCarousel from "pages-sections/examples/components/SectionCarousel.js";
 
-import componentsStyle from "assets/jss/nextjs-material-kit-pro/pages/componentsStyle.js";
+import componentsStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/componentsStyle.js";
 
 const useStyles = makeStyles(componentsStyle);
 

@@ -32,7 +32,7 @@ import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 import Tooltip from "@material-ui/core/Tooltip";
 
-import productStyle from "assets/jss/nextjs-material-kit-pro/pages/productStyle.js";
+import productStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/productStyle.js";
 
 // images
 import cardProduct1 from "assets/img/examples/card-product1.jpg";

@@ -22,7 +22,7 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 
-import loginPageStyle from "assets/jss/nextjs-material-kit-pro/pages/loginPageStyle.js";
+import loginPageStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/loginPageStyle.js";
 
 import image from "assets/img/bg7.jpg";
 
