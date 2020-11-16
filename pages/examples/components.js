@@ -14,7 +14,7 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "components/Header/ExampleHeaderLinks.js";
 // sections for this page
 import SectionBasics from "pages-sections/examples/components/SectionBasics.js";
 import SectionNavbars from "pages-sections/examples/components/SectionNavbars.js";

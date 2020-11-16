@@ -58,6 +58,7 @@ Parallax.propTypes = {
     "primary",
     "rose",
     "dark",
+    "extraDark",
     "info",
     "success",
     "warning",

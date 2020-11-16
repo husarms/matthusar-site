@@ -286,6 +286,30 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
+      <ListItem className={classes.listItem}>
+        <Hidden mdDown>
+          <Button
+            href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-navbar"
+            color={"white"}
+            target="_blank"
+            className={classes.navButton}
+            round
+          >
+            <ShoppingCart className={classes.icons} /> buy now
+          </Button>
+        </Hidden>
+        <Hidden mdUp>
+          <Button
+            href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-navbar"
+            color={"info"}
+            target="_blank"
+            className={classes.navButton}
+            round
+          >
+            <ShoppingCart className={classes.icons} /> buy now
+          </Button>
+        </Hidden>
+      </ListItem>
     </List>
   );
 }

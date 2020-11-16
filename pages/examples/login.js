@@ -12,7 +12,7 @@ import Favorite from "@material-ui/icons/Favorite";
 import Face from "@material-ui/icons/Face";
 // core components
 import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "components/Header/ExampleHeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";

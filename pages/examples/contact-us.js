@@ -20,7 +20,7 @@ import Phone from "@material-ui/icons/Phone";
 import BusinessCenter from "@material-ui/icons/BusinessCenter";
 // core components
 import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "components/Header/ExampleHeaderLinks.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
