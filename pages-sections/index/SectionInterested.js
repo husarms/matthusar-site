@@ -1,21 +1,17 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import TrendingUp from "@material-ui/icons/TrendingUp";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
-import Info from "components/Typography/Info.js";
-import Success from "components/Typography/Success.js";
-import Danger from "components/Typography/Danger.js";
 
-import bg5 from "assets/img/bg5.jpg";
-import blog5 from "assets/img/examples/blog5.jpg";
-import blog6 from "assets/img/examples/blog6.jpg";
+import osaka from "assets/img/japan/osaka-1.jpg";
+import tokyo from "assets/img/japan/tokyo-4.jpg";
+import thailand from "assets/img/thailand/thailand-1.jpg";
+import cambodia from "assets/img/cambodia/cambodia-3.jpg";
 
 import sectionInterestedStyle from "assets/jss/nextjs-material-kit-pro/pages/examples/blogPostsSections/sectionInterestedStyle.js";
 
@@ -25,32 +21,54 @@ export default function SectionInterested() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <h3 className={classes.title + " " + classes.textCenter}>
-        You may also be interested in
-      </h3>
-      <br />
       <GridContainer>
         <GridItem xs={12} sm={4} md={4} lg={4} xl={4}>
           <Card plain blog>
             <CardHeader image plain>
-              <a href="#pablo">
-                <img src={bg5} alt="..." />
+              <a href="/tokyo">
+                <img src={tokyo} alt="..." />
               </a>
               <div
                 className={classes.coloredShadow}
                 style={{
-                  backgroundImage: "url(" + bg5 + ")",
+                  backgroundImage: "url(" + tokyo + ")",
                   opacity: "1"
                 }}
               />
             </CardHeader>
             <CardBody plain>
-              <Info>
-                <h6>ENTERPRISE</h6>
-              </Info>
+              <h4 className={classes.cardTitle}>
+                <a href="/tokyo">
+                  Tokyo
+                </a>
+              </h4>
+              <p className={classes.description}>
+                Like so many organizations these days, Autodesk is a company in
+                transition. It was until recently a traditional boxed software
+                company selling licenses.
+                <a href="/tokyo"> Read More </a>
+              </p>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} sm={4} md={4} lg={4} xl={4}>
+          <Card plain blog>
+            <CardHeader plain image>
+              <a href="#pablo">
+                <img src={osaka} alt="..." />
+              </a>
+              <div
+                className={classes.coloredShadow}
+                style={{
+                  backgroundImage: "url(" + osaka + ")",
+                  opacity: "1"
+                }}
+              />
+            </CardHeader>
+            <CardBody plain>
               <h4 className={classes.cardTitle}>
                 <a href="#pablo">
-                  Autodesk looks to future of 3D printing with Project Escher
+                  Osaka
                 </a>
               </h4>
               <p className={classes.description}>
@@ -66,23 +84,20 @@ export default function SectionInterested() {
           <Card plain blog>
             <CardHeader plain image>
               <a href="#pablo">
-                <img src={blog5} alt="..." />
+                <img src={thailand} alt="..." />
               </a>
               <div
                 className={classes.coloredShadow}
                 style={{
-                  backgroundImage: "url(" + blog5 + ")",
+                  backgroundImage: "url(" + thailand + ")",
                   opacity: "1"
                 }}
               />
             </CardHeader>
             <CardBody plain>
-              <Success>
-                <h6>STARTUPS</h6>
-              </Success>
               <h4 className={classes.cardTitle}>
                 <a href="#pablo">
-                  Lyft launching cross-platform service this week
+                  Thailand
                 </a>
               </h4>
               <p className={classes.description}>
@@ -98,25 +113,20 @@ export default function SectionInterested() {
           <Card plain blog>
             <CardHeader plain image>
               <a href="#pablo">
-                <img src={blog6} alt="..." />
+                <img src={cambodia} alt="..." />
               </a>
               <div
                 className={classes.coloredShadow}
                 style={{
-                  backgroundImage: "url(" + blog6 + ")",
+                  backgroundImage: "url(" + cambodia + ")",
                   opacity: "1"
                 }}
               />
             </CardHeader>
             <CardBody plain>
-              <Danger>
-                <h6>
-                  <TrendingUp /> ENTERPRISE
-                </h6>
-              </Danger>
               <h4 className={classes.cardTitle}>
                 <a href="#pablo">
-                  6 insights into the French Fashion landscape
+                  Cambodia
                 </a>
               </h4>
               <p className={classes.description}>

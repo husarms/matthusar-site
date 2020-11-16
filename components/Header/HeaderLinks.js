@@ -41,7 +41,6 @@ import Error from "@material-ui/icons/Error";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
-import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/nextjs-material-kit-pro/components/headerLinksStyle.js";
 
