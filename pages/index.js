@@ -28,12 +28,8 @@ export default function BlogPostsPage() {
       <Header
         brand="Matt Husar"
         links={<HeaderLinks dropdownHoverColor="info" />}
-        fixed
+        absolute
         color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "info"
-        }}
       />
       <Parallax image={require("assets/img/japan/tokyo-bg.jpg")} filter="extraDark" small>
         <div className={classes.container}>
