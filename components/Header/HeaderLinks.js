@@ -78,7 +78,7 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow me on instagram"
+          title="Follow me on Instagram"
           placement={"top"}
           classes={{ tooltip: classes.tooltip }}
         >
