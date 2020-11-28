@@ -10,17 +10,16 @@ import {
 } from "assets/jss/nextjs-material-kit-pro.js";
 
 const footerStyle = {
-  left: {
-    float: "left!important",
-    display: "block"
-  },
-  right: {
-    margin: "0",
-    float: "right"
-  },
-  center: {
-    display: "inline-block",
-    float: "none"
+  container: {
+    width: "100%",
+    display: "grid",
+    justifyContent: "space-evenly",
+    alignContent: "center",
+    gridAutoFlow: "column",
+    "@media (max-width: 768px)": {
+      justifyContent: "center",
+      gridAutoFlow: "row",
+    },
   },
   footer: {
     padding: "0.9375rem 0",
@@ -39,7 +38,6 @@ const footerStyle = {
     textDecoration: "none",
     backgroundColor: "transparent"
   },
-  container,
   list: {
     marginBottom: "0",
     padding: "0",
@@ -101,7 +99,6 @@ const footerStyle = {
     padding: "15px 15px",
     fontSize: "18px",
     lineHeight: "50px",
-    marginLeft: "-15px",
     color: grayColor[1],
     textDecoration: "none",
     fontWeight: 700,

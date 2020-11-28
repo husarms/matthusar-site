@@ -14,80 +14,69 @@ const useStyles = makeStyles(styles);
 export default function SharedFooter() {
   const classes = useStyles();
   const scrollToTop = () => {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <footer className={classes.footer}>
       <div className={classes.container}>
         <div>
-          <div className={classes.left}>
-            <List className={classes.list}>
-              <ListItem className={classes.inlineBlock}>
-                <a href="/" className={classes.footerBrand}>
-                  Matt Husar
-                </a>
-              </ListItem>
-            </List>
-          </div>
-          <div className={classes.center}>
-            <List className={classes.list}>
-              <Button className={classes.navButton} onClick={scrollToTop}>Back to Top</Button>
-            </List>
-          </div>
-          <div className={classes.right}>
-            <List className={classes.list}>
-              <ListItem className={classes.listItem}>
-                <Button
-                  color="transparent"
-                  href="https://www.instagram.com/matthusar/"
-                  target="_blank"
-                  className={classes.buttonInstagram}
-                >
-                  <i
-                    className={classNames(
-                      classes.iconSocial,
-                      "fab",
-                      "fa-instagram"
-                    )}
-                  />
-                </Button>
-              </ListItem>
-              <ListItem className={classes.listItem}>
-                <Button
-                  color="transparent"
-                  href="https://github.com/husarms"
-                  target="_blank"
-                  className={classes.buttonGitHub}
-                >
-                  <i
-                    className={classNames(
-                      classes.iconSocial,
-                      "fab",
-                      "fa-github"
-                    )}
-                  />
-                </Button>
-              </ListItem>
-              <ListItem className={classes.listItem}>
-                <Button
-                  color="transparent"
-                  href="https://www.linkedin.com/in/matthusar/"
-                  target="_blank"
-                  className={classes.buttonLinkedIn}
-                >
-                  <i
-                    className={classNames(
-                      classes.iconSocial,
-                      "fab",
-                      "fa-linkedin"
-                    )}
-                  />
-                </Button>
-              </ListItem>
-            </List>
-          </div>
+          <a href="/" className={classes.footerBrand}>
+            Matt Husar
+          </a>
         </div>
-        <div className={classes.clearFix} />
+        <div>
+          <Button className={classes.navButton} onClick={scrollToTop}>
+            Back to Top
+          </Button>
+        </div>
+        <div>
+          <List className={classes.list}>
+            <ListItem className={classes.listItem}>
+              <Button
+                color="transparent"
+                href="https://www.instagram.com/matthusar/"
+                target="_blank"
+                className={classes.buttonInstagram}
+              >
+                <i
+                  className={classNames(
+                    classes.iconSocial,
+                    "fab",
+                    "fa-instagram"
+                  )}
+                />
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                color="transparent"
+                href="https://github.com/husarms"
+                target="_blank"
+                className={classes.buttonGitHub}
+              >
+                <i
+                  className={classNames(classes.iconSocial, "fab", "fa-github")}
+                />
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                color="transparent"
+                href="https://www.linkedin.com/in/matthusar/"
+                target="_blank"
+                className={classes.buttonLinkedIn}
+              >
+                <i
+                  className={classNames(
+                    classes.iconSocial,
+                    "fab",
+                    "fa-linkedin"
+                  )}
+                />
+              </Button>
+            </ListItem>
+          </List>
+        </div>
       </div>
     </footer>
   );
