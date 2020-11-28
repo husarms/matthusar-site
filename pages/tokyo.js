@@ -59,7 +59,7 @@ export default function BlogPostPage() {
           <SectionText />
         </div>
       </div>
-      <SharedFooter classes={classes} />
+      <SharedFooter />
     </div>
   );
 }

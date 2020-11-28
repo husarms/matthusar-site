@@ -47,7 +47,7 @@ export default function BlogPostsPage() {
           <SectionInterested />
         </div>
       </div>
-      <SharedFooter classes={classes} />
+      <SharedFooter />
     </div>
   );
 }

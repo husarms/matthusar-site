@@ -1,40 +1,94 @@
 /* eslint-disable */
 import React from "react";
+import classNames from "classnames";
 // @material-ui/core components
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Footer from "components/Footer/Footer.js";
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
 
-export default function SharedFooter(props) {
-  const { classes } = props;
+import styles from "assets/jss/nextjs-material-kit-pro/components/sharedFooterStyle.js";
+
+const useStyles = makeStyles(styles);
+
+export default function SharedFooter() {
+  const classes = useStyles();
+  const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
   return (
-    <Footer
-      content={
+    <footer className={classes.footer}>
+      <div className={classes.container}>
         <div>
           <div className={classes.left}>
             <List className={classes.list}>
               <ListItem className={classes.inlineBlock}>
-                <a
-                  href="https://www.creative-tim.com/?ref=njsmkp-blog-posts"
-                  target="_blank"
-                  className={classes.block}
-                >
+                <a href="/" className={classes.footerBrand}>
                   Matt Husar
                 </a>
               </ListItem>
             </List>
           </div>
+          <div className={classes.center}>
+            <List className={classes.list}>
+              <Button className={classes.navButton} onClick={scrollToTop}>Back to Top</Button>
+            </List>
+          </div>
           <div className={classes.right}>
-            &copy; {1900 + new Date().getYear()} , made with{" "}
-            <Favorite className={classes.icon} /> by{" "}
-            <a href="https://www.linkedin.com/in/matthusar" target="_blank">
-              Matt Husar
-            </a>{" "}
+            <List className={classes.list}>
+              <ListItem className={classes.listItem}>
+                <Button
+                  color="transparent"
+                  href="https://www.instagram.com/matthusar/"
+                  target="_blank"
+                  className={classes.buttonInstagram}
+                >
+                  <i
+                    className={classNames(
+                      classes.iconSocial,
+                      "fab",
+                      "fa-instagram"
+                    )}
+                  />
+                </Button>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <Button
+                  color="transparent"
+                  href="https://github.com/husarms"
+                  target="_blank"
+                  className={classes.buttonGitHub}
+                >
+                  <i
+                    className={classNames(
+                      classes.iconSocial,
+                      "fab",
+                      "fa-github"
+                    )}
+                  />
+                </Button>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <Button
+                  color="transparent"
+                  href="https://www.linkedin.com/in/matthusar/"
+                  target="_blank"
+                  className={classes.buttonLinkedIn}
+                >
+                  <i
+                    className={classNames(
+                      classes.iconSocial,
+                      "fab",
+                      "fa-linkedin"
+                    )}
+                  />
+                </Button>
+              </ListItem>
+            </List>
           </div>
         </div>
-      }
-    />
+        <div className={classes.clearFix} />
+      </div>
+    </footer>
   );
 }
