@@ -6,7 +6,6 @@ import {
   blackColor,
   linkedinColor,
   instagramColor,
-  hexToRgb
 } from "assets/jss/nextjs-material-kit-pro.js";
 
 const footerStyle = {
@@ -51,11 +50,6 @@ const footerStyle = {
     width: "auto",
     margin: "0",
     padding: "0"
-  },
-  inlineBlock: {
-    display: "inline-block",
-    padding: "0px",
-    width: "auto"
   },
   navButton: {
     padding: "15px 15px",
@@ -104,8 +98,5 @@ const footerStyle = {
     fontWeight: 700,
     fontFamily: "Roboto Slab,Times New Roman,serif"
   },
-  clearFix: {
-    clear: "both"
-  }
 };
 export default footerStyle;
