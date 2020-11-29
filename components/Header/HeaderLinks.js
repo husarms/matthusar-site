@@ -84,7 +84,6 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            color="transparent"
             href="https://www.instagram.com/matthusar/"
             target="_blank"
             className={classes.navLink}
@@ -101,7 +100,6 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            color="transparent"
             href="https://github.com/husarms"
             target="_blank"
             className={classes.navLink}
@@ -118,7 +116,6 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            color="transparent"
             href="https://www.linkedin.com/in/matthusar/"
             target="_blank"
             className={classes.navLink}

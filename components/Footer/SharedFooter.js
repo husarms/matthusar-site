@@ -33,7 +33,6 @@ export default function SharedFooter() {
           <List className={classes.list}>
             <ListItem className={classes.listItem}>
               <Button
-                color="transparent"
                 href="https://www.instagram.com/matthusar/"
                 target="_blank"
                 className={classes.buttonInstagram}
@@ -49,7 +48,6 @@ export default function SharedFooter() {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                color="transparent"
                 href="https://github.com/husarms"
                 target="_blank"
                 className={classes.buttonGitHub}
@@ -61,7 +59,6 @@ export default function SharedFooter() {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                color="transparent"
                 href="https://www.linkedin.com/in/matthusar/"
                 target="_blank"
                 className={classes.buttonLinkedIn}
