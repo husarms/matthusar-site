@@ -7,12 +7,12 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import Clearfix from "components/Clearfix/Clearfix.js";
 import SharedFooter from "components/Footer/SharedFooter.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Button from "components/CustomButtons/Button.js";
+import Badge from "components/Badge/Badge.js";
 
 import matt from "assets/img/profile/matt-1.jpg";
 
@@ -54,30 +54,45 @@ export default function ProfilePage({ ...rest }) {
                 </div>
                 <div className={classes.name}>
                   <h3 className={classes.title}>Matt Husar</h3>
-                  <h6>DESIGNER</h6>
+                  <h6>ENGINEER, DIGITAL NOMAD</h6>
                   <Button
                     justIcon
                     simple
-                    color="dribbble"
+                    color="instagram"
+                    onClick={() =>
+                      window.open(
+                        "https://www.instagram.com/matthusar/",
+                        "_blank"
+                      )
+                    }
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-dribbble"} />
+                    <i className={classes.socials + " fab fa-instagram"} />
                   </Button>
                   <Button
                     justIcon
                     simple
-                    color="twitter"
+                    color="github"
+                    onClick={() =>
+                      window.open("https://github.com/husarms", "_blank")
+                    }
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-twitter"} />
+                    <i className={classes.socials + " fab fa-github"} />
                   </Button>
                   <Button
                     justIcon
                     simple
-                    color="pinterest"
+                    color="linkedin"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/matthusar/",
+                        "_blank"
+                      )
+                    }
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-pinterest"} />
+                    <i className={classes.socials + " fab fa-linkedin"} />
                   </Button>
                 </div>
               </div>
@@ -85,20 +100,36 @@ export default function ProfilePage({ ...rest }) {
           </GridContainer>
           <div className={classNames(classes.description, classes.textCenter)}>
             <p>
-              An artist of considerable range, Chet Faker — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure.{" "}
+              I am a versatile, product-focused software engineer with 10 years
+              of experience and a track record delivering business-critical
+              experiences and services that are resilient, scalable and
+              highly-available.
             </p>
             <p>
-              An artist of considerable range, Chet Faker — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure.{" "}
+              My expertise includes leveraging continuous prototyping, testing,
+              and measurement to facilitate discovery and gain user insights to
+              iterate products.
             </p>
           </div>
+          <GridContainer>
+            <GridItem
+              xs={12}
+              sm={12}
+              md={12}
+              className={classNames(classes.gridItem, classes.textCenter)}
+            >
+              <div className={classes.profileTabs}>
+                <h4 className={classes.title}>Skills</h4>
+                <Badge color="primary">JavaScript</Badge>
+                <Badge color="warning">C#</Badge>
+                <Badge color="success">.NET</Badge>
+                <Badge color="info">React</Badge>
+                <Badge color="rose">Node.js</Badge>
+                <Badge color="danger">Azure</Badge>
+              </div>
+            </GridItem>
+          </GridContainer>
         </div>
-        <Clearfix />
       </div>
       <SharedFooter />
     </div>
