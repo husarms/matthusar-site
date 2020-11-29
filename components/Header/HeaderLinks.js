@@ -9,6 +9,7 @@ import Link from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import Icon from "@material-ui/core/Icon";
 import Tooltip from "@material-ui/core/Tooltip";
 import Button from "@material-ui/core/Button";
 
@@ -62,17 +63,17 @@ export default function HeaderLinks(props) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Link href="/">
-          <a className={classes.navLink}>Travel</a>
+        <a className={classes.navLink}><Icon className={classes.socialIcons}>public</Icon> Travel</a>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link href="/">
-          <a className={classes.navLink}>Tech</a>
+          <a className={classes.navLink}><Icon className={classes.socialIcons}>memory</Icon> Tech</a>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link href="/about">
-          <a className={classes.navLink}>About</a>
+          <a className={classes.navLink}><Icon className={classes.socialIcons}>account_circle</Icon> About</a>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
