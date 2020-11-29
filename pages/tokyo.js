@@ -32,17 +32,10 @@ export default function BlogPostPage() {
     return (-c / 2) * (t * (t - 2) - 1) + b;
   };
   const smoothScroll = (e, target) => {
-    var isMobile = navigator.userAgent.match(
-      /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-    );
-    if (isMobile) {
-      // if we are on mobile device the scroll into view will be managed by the browser
-    } else {
-      e.preventDefault();
-      var targetScroll = document.getElementById(target);
-      const y = targetScroll.getBoundingClientRect().top + window.scrollY;
-      scrollGo(document.documentElement, y, 1250);
-    }
+    e.preventDefault();
+    var targetScroll = document.getElementById(target);
+    const y = targetScroll.getBoundingClientRect().top + window.scrollY;
+    scrollGo(document.documentElement, y, 1250);
   };
   const scrollGo = (element, to, duration) => {
     var start = element.scrollTop,
